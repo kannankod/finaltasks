@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> School Store </title>
+    <style>
+        body{
+        margin:0;
+        background:#f2f2f2f;
+        }
+        .nav{
+        width:100%;
+        background:#000033;
+        height:80px;
+        }
+        ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+        position:absolute;
+        }
+        ul li {
+        float:left;
+        margin-top:20px;
+        }
+        ul li a{
+        width:150px;
+        color:white;
+        display:block;
+        text-decoration:none;
+        font-size:20px;
+        text-align:center;
+        padding:10px;
+        border-radius:10px;
+        font-family:Century Gothic;
+        font-weight:bold;
+        }
+        a:hover{
+        background:#669900
+        }
+        ul li ul{
+        background:#000033;
+         }
+         ul li ul li {
+         float:none;
+         }
+         ul li ul{
+         display:none;
+         }
+         ul li:hover ul {
+         display:block;
+         }
+    </style>
+<head/>
+    <body>
+<div class="nav">
+    <ul>
+        <li><a href="{%url 'home' %}">Home</a></li>
+         <li><a href="{%url 'login' %}">Login</a></li>
+         <li><a href="{%url 'register' %}">Register</a></li>
+        <li><a href="#">Departments</a>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Computer_science">Computer</a>
+            <li><a href="https://en.wikipedia.org/wiki/Commerce">Commerce</a>
+            <li><a href="https://en.wikipedia.org/wiki/Physics">Physics</a>
+            <li><a href="https://en.wikipedia.org/wiki/Chemistry">Chemistry</a>
+            <li><a href="https://en.wikipedia.org/wiki/Science">Science</a>
+        </ul>
+
+
+        </li>
+    </ul>
+</div>
+
+</div>
+</body>
+</html>

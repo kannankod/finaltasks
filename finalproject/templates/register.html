@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register </title>
+   <!--Made with love by Mutiullah Samim -->
+
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="#">
+    <title>School Store - Register</title>
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+
+			<div class="card-body">
+				 <h1>Registration</h1>
+    <form action=""   method="post">
+        {% csrf_token %}
+
+        <input type="text" name="username" placeholder="Enter your Username"><br>
+
+        <input type="password"  name="password" placeholder="Enter your Password"><br>
+
+        <input type="password"  name="password1" placeholder="Confirm your password"><br>
+        <input type="submit" >
+    </form>
+	{% for msg in messages %}
+				<h2>{{msg}}</h2>
+	{% endfor %}
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
